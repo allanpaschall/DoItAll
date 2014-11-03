@@ -76,9 +76,17 @@ namespace CopyFiletoWebserver
             copyAssurance();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnSomeMath_Click(object sender, EventArgs e)
         {
-
+            int counter = 0;
+            for (int i = 0; i <= 1000; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    counter++;
+                }
+            }
+            label3.Text = counter.ToString();
         }
 
     }

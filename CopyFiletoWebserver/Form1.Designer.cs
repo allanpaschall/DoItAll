@@ -34,6 +34,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnContrLog = new System.Windows.Forms.Button();
+            this.btnSomeMath = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +69,6 @@
             this.label1.Size = new System.Drawing.Size(130, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Copy Access files to CUB:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblResult
             // 
@@ -85,11 +88,52 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // btnContrLog
+            // 
+            this.btnContrLog.Location = new System.Drawing.Point(15, 161);
+            this.btnContrLog.Name = "btnContrLog";
+            this.btnContrLog.Size = new System.Drawing.Size(172, 23);
+            this.btnContrLog.TabIndex = 6;
+            this.btnContrLog.Text = "Update Contribute Log";
+            this.btnContrLog.UseVisualStyleBackColor = true;
+            // 
+            // btnSomeMath
+            // 
+            this.btnSomeMath.Location = new System.Drawing.Point(15, 223);
+            this.btnSomeMath.Name = "btnSomeMath";
+            this.btnSomeMath.Size = new System.Drawing.Size(75, 23);
+            this.btnSomeMath.TabIndex = 7;
+            this.btnSomeMath.Text = "Some Math";
+            this.btnSomeMath.UseVisualStyleBackColor = true;
+            this.btnSomeMath.Click += new System.EventHandler(this.btnSomeMath_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(47, 198);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Result:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(47, 258);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Result:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(199, 161);
+            this.ClientSize = new System.Drawing.Size(199, 285);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnSomeMath);
+            this.Controls.Add(this.btnContrLog);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -111,6 +155,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button btnContrLog;
+        private System.Windows.Forms.Button btnSomeMath;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
