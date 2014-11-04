@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Timers;
+using System.Diagnostics;
 
 namespace CopyFiletoWebserver
 {
@@ -87,6 +88,23 @@ namespace CopyFiletoWebserver
                 }
             }
             label3.Text = counter.ToString();
+        }
+
+        private void btnContrLog_Click(object sender, EventArgs e)
+        {
+            Process perl = new Process();
+            perl.StartInfo.FileName = "C:\\Perl\\bin\\perl.exe";
+            perl.StartInfo.Arguments = "C:\\Users\\Paschall\\desktop\\ctnetperformancelog\\ContributeLogParser.pl";
+            perl.StartInfo.WorkingDirectory = "C:\\Users\\Paschall\\desktop\\ctnetperformancelog\\";
+            perl.StartInfo.UseShellExecute = true;
+            perl.StartInfo.RedirectStandardOutput = false;
+            perl.Start();
+
+            //string output = perl.StandardOutput.ReadToEnd();
+            perl.WaitForExit();
+
+            Console.WriteLine("Output:");
+            //Console.WriteLine(output);
         }
 
     }

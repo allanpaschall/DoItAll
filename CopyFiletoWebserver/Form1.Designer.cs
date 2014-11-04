@@ -96,6 +96,7 @@
             this.btnContrLog.TabIndex = 6;
             this.btnContrLog.Text = "Update Contribute Log";
             this.btnContrLog.UseVisualStyleBackColor = true;
+            this.btnContrLog.Click += new System.EventHandler(this.btnContrLog_Click);
             // 
             // btnSomeMath
             // 
